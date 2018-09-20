@@ -1,2 +1,2 @@
 # risk
-Risk game of Jelle en Jens
+https://github.com/HAN-ASD-DT/risk/wiki
