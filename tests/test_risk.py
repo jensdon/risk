@@ -29,6 +29,14 @@ class RiskTest(unittest.TestCase):
         with self.assertRaises(NotEnoughPlayers):
           self.newGame.startgame()
 
+    def test_checkiftherightamountofamriesaredividedtotheplayers(self):
+        armies = [[3,35],[4,30],[5,25],[6,20]];
+        for armie in armies:
+            self.setUp()
+            self.generateRandomplayers(armie[0]);
+            self.newGame.startgame()
+            self.assertEqual(len(self.newGame.getplayers()[0].getArmies()), armie[1])
+
 
 if __name__ == '__main__':
     unittest.main()
