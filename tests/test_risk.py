@@ -1,5 +1,5 @@
 import unittest
-from Risk import Risk,TooManyPlayersException,ColorAlreadyUsed
+from Risk import Risk,TooManyPlayersException,ColorAlreadyUsed,NotEnoughPlayers
 
 class RiskTest(unittest.TestCase):
 
@@ -23,6 +23,11 @@ class RiskTest(unittest.TestCase):
         self.newGame.addplayer("Player", "blue", True)
         with self.assertRaises(ColorAlreadyUsed):
           self.newGame.addplayer("PlayerOne", "blue", True)
+
+    def test_iftherearenotenoughplayerstostart(self):
+        self.setUp()
+        with self.assertRaises(NotEnoughPlayers):
+          self.newGame.startgame()
 
 
 if __name__ == '__main__':
