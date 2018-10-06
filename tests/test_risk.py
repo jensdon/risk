@@ -21,9 +21,9 @@ class RiskTest(unittest.TestCase):
           self.newGame.addplayer("PlayerOne", "blue", True)
 
     def test_addplayerswiththesamecolor(self):
-        self.newGame.addplayer("Player", "blue", True)
+        self.generateRandomplayers(1);
         with self.assertRaises(ColorAlreadyUsed):
-          self.newGame.addplayer("PlayerOne", "blue", True)
+            self.generateRandomplayers(1);
 
     def test_iftherearenotenoughplayerstostart(self):
         with self.assertRaises(NotEnoughPlayers):
