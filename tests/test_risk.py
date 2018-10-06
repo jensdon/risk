@@ -19,5 +19,12 @@ class RiskTest(unittest.TestCase):
         with self.assertRaises(Exception):
           self.newGame.addplayer("PlayerOne", "blue", True)
 
+    def test_addplayerswiththesamecolor(self):
+        self.setUp()
+        self.newGame.addplayer("Player", "blue", True)
+        with self.assertRaises(Exception):
+          self.newGame.addplayer("PlayerOne", "blue", True)
+
+
 if __name__ == '__main__':
     unittest.main()
