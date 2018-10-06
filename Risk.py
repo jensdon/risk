@@ -6,6 +6,9 @@ class TooManyPlayersException(Exception):
 class ColorAlreadyUsed(Exception):
     pass
 
+class NotEnoughPlayers(Exception):
+    pass
+
 class Risk:
 
     def __init__(self):
@@ -18,6 +21,13 @@ class Risk:
 
     def getplayers(self):
         return self.players
+
+    def startgame(self):
+        self.__checkifthereareenoughplayers()
+
+    def __checkifthereareenoughplayers(self):
+        if len(self.players) < 2:
+            raise NotEnoughPlayers('Not enough players')
 
     def __checkfortoomanyplayers(self):
         if len(self.players) > 5:
