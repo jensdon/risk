@@ -7,7 +7,7 @@ class RiskTest(unittest.TestCase):
     def setUp(self):
         self.newGame = Risk()
 
-    def test_addPlayer(self):
+    def test_addplayer(self):
         self.newGame.addplayer("PlayerOne", "blue", True);
         getplayercount = len(self.newGame.getplayers());
         self.assertEqual(1, getplayercount, "Player is not found in game.")
