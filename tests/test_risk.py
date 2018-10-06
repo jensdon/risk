@@ -35,7 +35,7 @@ class RiskTest(unittest.TestCase):
             self.setUp()
             self.generateRandomplayers(armie[0]);
             self.newGame.startgame()
-            self.assertEqual(len(self.newGame.getplayers()[0].getArmies()), armie[1])
+            self.assertEqual(len(self.newGame.getplayers()[0].getarmies()), armie[1])
 
 
 if __name__ == '__main__':

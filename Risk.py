@@ -24,6 +24,22 @@ class Risk:
 
     def startgame(self):
         self.__checkifthereareenoughplayers()
+        self.__dividearmiestoallplayers()
+
+    def __giveallplayersamountofarmies(self,amount):
+        for player in self.players:
+            player.givearmies(amount)
+
+    def __dividearmiestoallplayers(self):
+        amountofplayers = len(self.players)
+        if amountofplayers == 3:
+            self.__giveallplayersamountofarmies(35)
+        elif amountofplayers == 4:
+            self.__giveallplayersamountofarmies(30)
+        elif amountofplayers == 5:
+            self.__giveallplayersamountofarmies(25)
+        else:
+            self.__giveallplayersamountofarmies(20)
 
     def __checkifthereareenoughplayers(self):
         if len(self.players) < 2:
