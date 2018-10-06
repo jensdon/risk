@@ -1,5 +1,10 @@
 from Player import Player
 
+class TooManyPlayersException(Exception):
+    pass
+
+class ColorAlreadyUsed(Exception):
+    pass
 
 class Risk:
 
@@ -10,7 +15,7 @@ class Risk:
         if self.__checkfortoomanyplayers():
             self.players.append(Player(name, color, typeofplayer))
         else:
-            raise Exception('Too many players')
+            raise TooManyPlayersException('Too many players')
 
     def getplayers(self):
         return self.players

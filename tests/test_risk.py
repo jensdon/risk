@@ -1,6 +1,5 @@
 import unittest
-from Risk import Risk
-
+from Risk import Risk,TooManyPlayersException,ColorAlreadyUsed
 
 class RiskTest(unittest.TestCase):
 
@@ -16,13 +15,13 @@ class RiskTest(unittest.TestCase):
         self.setUp()
         for color in range(6):
             self.newGame.addplayer("Player", str(color), True);
-        with self.assertRaises(Exception):
+        with self.assertRaises(TooManyPlayersException):
           self.newGame.addplayer("PlayerOne", "blue", True)
 
     def test_addplayerswiththesamecolor(self):
         self.setUp()
         self.newGame.addplayer("Player", "blue", True)
-        with self.assertRaises(Exception):
+        with self.assertRaises(ColorAlreadyUsed):
           self.newGame.addplayer("PlayerOne", "blue", True)
 
 
