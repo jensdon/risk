@@ -3,3 +3,6 @@ class Player:
         self.name = name
         self.color = color
         self.typeofplayer = typeofplayer
+
+    def getcolor(self):
+        return self.color
