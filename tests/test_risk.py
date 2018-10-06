@@ -19,7 +19,7 @@ class RiskTest(unittest.TestCase):
         self.newGame.addplayer("PlayerOne", "blue", True);
         self.newGame.addplayer("PlayerOne", "blue", True);
         self.newGame.addplayer("PlayerOne", "blue", True);
-        self.assertRaises(TooManyPlayersError, self.newGame.addplayer("PlayerOne", "blue", True))
+        self.assertRaises(Exception, self.newGame.addplayer("PlayerOne", "blue", True))
 
 
 if __name__ == '__main__':
