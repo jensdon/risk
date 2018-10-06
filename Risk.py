@@ -12,23 +12,19 @@ class Risk:
         self.players = []
 
     def addplayer(self, name, color, typeofplayer):
-        if self.__checkfortoomanyplayers():
-            if self.__checkifcolorisalreadybeenused(color) == False:
-                self.players.append(Player(name, color, typeofplayer))
-            else:
-                raise ColorAlreadyUsed('Color already in use')
-        else:
-            raise TooManyPlayersException('Too many players')
+        self.__checkfortoomanyplayers()
+        self.__checkifcolorisalreadybeenused(color)
+        self.players.append(Player(name, color, typeofplayer))
 
     def getplayers(self):
         return self.players
 
     def __checkfortoomanyplayers(self):
-        return len(self.players) < 6
+        if len(self.players) > 5:
+            raise TooManyPlayersException('Too many players')
 
     def __checkifcolorisalreadybeenused(self,color):
         for player in self.players:
             if player.getcolor() == color:
-                return True
-        return False
+                raise ColorAlreadyUsed('Color already in use')
 
