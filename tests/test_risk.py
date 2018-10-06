@@ -18,7 +18,7 @@ class RiskTest(unittest.TestCase):
     def test_addtomuchplayers(self):
         self.generateRandomplayers(6);
         with self.assertRaises(TooManyPlayersException):
-          self.newGame.addplayer("PlayerOne", "blue", True)
+            self.generateRandomplayers(1);
 
     def test_addplayerswiththesamecolor(self):
         self.generateRandomplayers(1);
