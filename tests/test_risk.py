@@ -13,10 +13,11 @@ class RiskTest(unittest.TestCase):
         self.assertEqual(1, getplayercount, "Player is not found in game.")
 
     def test_addtomuchplayers(self):
-        for color in range(5):
+        self.setUp()
+        for color in range(6):
             self.newGame.addplayer("Player", str(color), True);
-        self.assertRaises(Exception, self.newGame.addplayer("PlayerOne", "blue", True))
-
+        with self.assertRaises(Exception):
+          self.newGame.addplayer("PlayerOne", "blue", True)
 
 if __name__ == '__main__':
     unittest.main()

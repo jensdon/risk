@@ -7,7 +7,8 @@ class Risk:
         self.players = []
 
     def addplayer(self, name, color, typeofplayer):
-        if self.__checkfortoomanyplayers:
+        if self.__checkfortoomanyplayers():
+            print('blaa')
             self.players.append(Player(name, color, typeofplayer))
         else:
             raise Exception('Too many players')
@@ -16,5 +17,6 @@ class Risk:
         return self.players
 
     def __checkfortoomanyplayers(self):
-        return len(self.players) < 7
+        print(len(self.players))
+        return len(self.players) < 6
 
