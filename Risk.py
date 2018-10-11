@@ -31,15 +31,7 @@ class Risk:
             player.givearmies(amount)
 
     def __dividearmiestoallplayers(self):
-        amountofplayers = len(self.players)
-        if amountofplayers == 3:
-            self.__giveallplayersamountofarmies(35)
-        elif amountofplayers == 4:
-            self.__giveallplayersamountofarmies(30)
-        elif amountofplayers == 5:
-            self.__giveallplayersamountofarmies(25)
-        else:
-            self.__giveallplayersamountofarmies(20)
+        self.__giveallplayersamountofarmies((10 - len(self.players)) * 5)
 
     def __checkifthereareenoughplayers(self):
         if len(self.players) < 2:
