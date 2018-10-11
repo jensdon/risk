@@ -12,6 +12,7 @@
 .idea/**/dictionaries
 .idea/**/shelf
 .idea/misc.xml
+.idea/risk.iml
 .idea/vcs.xml
 .idea/modules.xml
 .idea/python-playground.iml
