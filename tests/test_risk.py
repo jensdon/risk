@@ -10,6 +10,11 @@ class RiskTest(unittest.TestCase):
         for color in range(amount):
             self.newGame.addplayer("Player", str(color), True);
 
+    def startAnGame(self,amountofplayers):
+        self.setUp()
+        self.generateRandomplayers(amountofplayers);
+        self.newGame.startgame()
+
     def test_addplayer(self):
         self.generateRandomplayers(1);
         getplayercount = len(self.newGame.getplayers());
@@ -32,9 +37,7 @@ class RiskTest(unittest.TestCase):
     def test_checkiftherightamountofamriesaredividedtotheplayers(self):
         armies = [[3,35],[4,30],[5,25],[6,20]];
         for armie in armies:
-            self.setUp()
-            self.generateRandomplayers(armie[0]);
-            self.newGame.startgame()
+            self.startAnGame(armie[0])
             self.assertEqual(len(self.newGame.getplayers()[0].getarmies()), armie[1])
 
 
