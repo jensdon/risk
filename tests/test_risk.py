@@ -40,6 +40,11 @@ class RiskTest(unittest.TestCase):
             self.startAnGame(armie[0])
             self.assertEqual(len(self.newGame.getplayers()[0].getarmies()), armie[1])
 
+    def test_givemissionstoplayers(self):
+        self.startAnGame(3)
+        for player in self.newGame.getplayers():
+            self.assertIsNotNone(player.getMission())
+
 
 if __name__ == '__main__':
     unittest.main()
