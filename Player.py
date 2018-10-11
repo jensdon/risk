@@ -20,3 +20,6 @@ class Player:
 
     def getmission(self):
         return self.mission
+
+    def recievemission(self,mission):
+        self.mission = mission
