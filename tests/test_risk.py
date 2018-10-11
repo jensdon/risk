@@ -43,7 +43,7 @@ class RiskTest(unittest.TestCase):
     def test_givemissionstoplayers(self):
         self.startAnGame(3)
         for player in self.newGame.getplayers():
-            self.assertIsNotNone(player.getMission())
+            self.assertIsNotNone(player.getmission())
 
 
 if __name__ == '__main__':

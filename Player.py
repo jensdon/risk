@@ -6,6 +6,7 @@ class Player:
         self.color = color
         self.typeofplayer = typeofplayer
         self.armies = [];
+        self.mission = None
 
     def getcolor(self):
         return self.color
@@ -17,4 +18,5 @@ class Player:
     def getarmies(self):
         return self.armies
 
-
+    def getmission(self):
+        return self.mission
