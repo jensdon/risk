@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbe77915-1c87-4776-91fd-2144e35c0652" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_missions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_risk.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_risk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Missions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Missions.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +12,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/risk$test.coverage" NAME="test Coverage Results" MODIFIED="1538817496010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/risk$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1539422551957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/risk$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1539422647384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="152" />
@@ -89,13 +87,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="9" />
-          <entry key="py" value="2805" />
+          <entry key="py" value="2855" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="2805" />
+          <entry key="Python" value="2855" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -163,11 +161,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_missions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <state relative-caret-position="195">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="26" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <marker date="1539422550295" expanded="true" signature="387:587" ph="..." />
@@ -198,15 +196,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Missions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="19" />
+            <state relative-caret-position="178">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-                <marker date="1539420377726" expanded="true" signature="59:64" ph="..." />
-                <marker date="1539420377726" expanded="true" signature="499:538" ph="..." />
+                <marker date="1539422705814" expanded="true" signature="59:64" ph="..." />
+                <marker date="1539422705814" expanded="true" signature="589:628" ph="..." />
               </folding>
             </state>
           </provider>
@@ -236,12 +234,12 @@
         <option value="$PROJECT_DIR$/Army.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Missions.py" />
         <option value="$PROJECT_DIR$/Risk.py" />
         <option value="$PROJECT_DIR$/Player.py" />
         <option value="$PROJECT_DIR$/Mission.py" />
         <option value="$PROJECT_DIR$/tests/test_risk.py" />
         <option value="$PROJECT_DIR$/tests/test_missions.py" />
+        <option value="$PROJECT_DIR$/Missions.py" />
       </list>
     </option>
   </component>
@@ -343,12 +341,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_tests - 2018.10.13 at 10h 50m 28s.xml">
-      <configuration name="Unittests in tests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_tests - 2018.10.13 at 10h 50m 57s.xml">
-      <configuration name="Unittests in tests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_tests - 2018.10.13 at 10h 53m 03s.xml">
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
@@ -371,6 +363,12 @@
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_tests - 2018.10.13 at 11h 22m 32s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.10.13 at 11h 23m 37s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.10.13 at 11h 24m 07s.xml">
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
   </component>
@@ -455,18 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Missions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1539420377726" expanded="true" signature="59:64" ph="..." />
-            <marker date="1539420377726" expanded="true" signature="499:538" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Risk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -491,11 +477,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_missions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="195">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="26" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <marker date="1539422550295" expanded="true" signature="387:587" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Missions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1539422705814" expanded="true" signature="59:64" ph="..." />
+            <marker date="1539422705814" expanded="true" signature="589:628" ph="..." />
           </folding>
         </state>
       </provider>
