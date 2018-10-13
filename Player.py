@@ -1,25 +1,26 @@
 from Army import Army
 
+
 class Player:
-    def __init__(self, name, color, typeofplayer):
+    def __init__(self, name, color, type_of_player):
         self.name = name
         self.color = color
-        self.typeofplayer = typeofplayer
-        self.armies = [];
+        self.type_of_player = type_of_player
+        self.armies = []
         self.mission = None
 
-    def getcolor(self):
+    def get_color(self):
         return self.color
 
-    def givearmies(self, amount):
-        for armie in range(amount):
-            self.armies.append(Army());
+    def give_armies(self, amount):
+        for army in range(amount):
+            self.armies.append(Army())
 
-    def getarmies(self):
+    def get_armies(self):
         return self.armies
 
-    def getmission(self):
+    def get_mission(self):
         return self.mission
 
-    def recievemission(self,mission):
+    def receive_mission(self, mission):
         self.mission = mission

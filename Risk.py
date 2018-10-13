@@ -14,35 +14,35 @@ class Risk:
     def __init__(self):
         self.players = []
 
-    def addplayer(self, name, color, typeofplayer):
-        self.__checkfortoomanyplayers()
-        self.__checkifcolorisalreadybeenused(color)
-        self.players.append(Player(name, color, typeofplayer))
+    def add_player(self, name, color, type_of_player):
+        self.__check_for_too_many_players()
+        self.__check_if_color_is_already_been_used(color)
+        self.players.append(Player(name, color, type_of_player))
 
-    def getplayers(self):
+    def get_players(self):
         return self.players
 
-    def startgame(self):
-        self.__checkifthereareenoughplayers()
-        self.__dividearmiestoallplayers()
+    def start_game(self):
+        self.__check_if_there_are_enough_players()
+        self.__divide_armies_to_all_players()
 
-    def __giveallplayersamountofarmies(self,amount):
+    def __give_all_players_amount_of_armies(self, amount):
         for player in self.players:
-            player.givearmies(amount)
+            player.give_armies(amount)
 
-    def __dividearmiestoallplayers(self):
-        self.__giveallplayersamountofarmies((10 - len(self.players)) * 5)
+    def __divide_armies_to_all_players(self):
+        self.__give_all_players_amount_of_armies((10 - len(self.players)) * 5)
 
-    def __checkifthereareenoughplayers(self):
+    def __check_if_there_are_enough_players(self):
         if len(self.players) < 2:
             raise NotEnoughPlayers('Not enough players')
 
-    def __checkfortoomanyplayers(self):
+    def __check_for_too_many_players(self):
         if len(self.players) > 5:
             raise TooManyPlayersException('Too many players')
 
-    def __checkifcolorisalreadybeenused(self,color):
+    def __check_if_color_is_already_been_used(self,color):
         for player in self.players:
-            if player.getcolor() == color:
+            if player.get_color() == color:
                 raise ColorAlreadyUsed('Color already in use')
 
