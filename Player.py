@@ -12,11 +12,11 @@ class Player:
     def get_color(self):
         return self.color
 
-    def give_armies(self, amount):
+    def receive_armies(self, amount):
         for army in range(amount):
             self.armies.append(Army())
 
-    def receive_armies(self):
+    def get_armies(self):
         return self.armies
 
     def get_mission(self):
