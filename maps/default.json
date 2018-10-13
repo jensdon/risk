@@ -1,0 +1,24 @@
+{
+  "name": "Default map",
+  "continents": [
+    {
+      "name": "North America"
+    },
+    {
+      "name": "South America"
+    },
+    {
+      "name": "Europe"
+    },
+    {
+      "name": "Africa"
+    },
+    {
+      "name": "Asia"
+    },
+    {
+      "name": "Australia"
+    }
+  ]
+}
+
