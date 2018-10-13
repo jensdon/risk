@@ -11,7 +11,7 @@ class GameMapFactory:
     def load_game_map(name):
         game_map_settings = GameMapSetting(name)
         try:
-            return game_map_settings.load_game_map()
+            return game_map_settings.load_game_map_json()
         except ConfigNotExists:
             raise GameMapNotExists('Map not exist')
         except InvalidSource:

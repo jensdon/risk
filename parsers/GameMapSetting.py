@@ -15,11 +15,11 @@ class GameMapSetting:
         self.name = name
         self.path = "./maps/" + self.name.lower()
 
-    def load_game_map(self):
+    def load_game_map_json(self):
         self.__check_if_config_exist()
         return self.__read_content_config_file()
 
-    def create_map(self, json):
+    def get_game_map_json(self, json):
         if self.__validate_json(json):
             raise InvalidSource('Source is not valid')
 

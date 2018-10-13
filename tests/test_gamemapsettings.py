@@ -9,12 +9,12 @@ class GameMapSettingsTest(unittest.TestCase):
 
         with self.assertRaises(InvalidSource):
             game_map_settings = GameMapSetting('default')
-            self.game_map = game_map_settings.create_map(json)
+            self.game_map = game_map_settings.get_game_map_json(json)
 
     def test_check_if_source_is_valid(self):
         json = '{"name": "valid formatted map", "continents": {"name": "Europe"}}'
         game_map_settings = GameMapSetting('default')
-        self.game_map = game_map_settings.create_map(json)
+        self.game_map = game_map_settings.get_game_map_json(json)
 
 
 if __name__ == '__main__':
