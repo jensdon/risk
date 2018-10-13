@@ -1,5 +1,5 @@
 import unittest
-from Missions import Missions
+from entities.Missions import Missions
 
 
 class MissionTest(unittest.TestCase):

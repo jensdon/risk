@@ -1,5 +1,5 @@
 import unittest
-from GameMapFactory import GameMapFactory, GameMapNotExists
+from factories.GameMapFactory import GameMapFactory, GameMapNotExists
 
 
 class GameMapTest(unittest.TestCase):

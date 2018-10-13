@@ -1,4 +1,4 @@
-from GameMapSetting import GameMapSetting,ConfigNotExists
+from parsers.GameMapSetting import GameMapSetting,ConfigNotExists
 
 
 class GameMapNotExists(Exception):

@@ -1,4 +1,4 @@
-from Army import Army
+from entities.Army import Army
 
 
 class Player:

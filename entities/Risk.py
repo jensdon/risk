@@ -1,5 +1,5 @@
-from Player import Player
-from Missions import Missions
+from entities.Player import Player
+from entities.Missions import Missions
 
 class TooManyPlayersException(Exception):
     pass

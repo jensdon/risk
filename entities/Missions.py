@@ -1,4 +1,4 @@
-from Mission import Mission
+from entities.Mission import Mission
 import random
 
 

@@ -1,5 +1,5 @@
 import unittest
-from Risk import Risk, TooManyPlayersException, ColorAlreadyUsed, NotEnoughPlayers
+from entities.Risk import Risk, TooManyPlayersException, ColorAlreadyUsed, NotEnoughPlayers
 
 
 class RiskTest(unittest.TestCase):
