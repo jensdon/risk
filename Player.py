@@ -16,7 +16,7 @@ class Player:
         for army in range(amount):
             self.armies.append(Army())
 
-    def get_armies(self):
+    def receive_armies(self):
         return self.armies
 
     def get_mission(self):

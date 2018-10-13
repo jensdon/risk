@@ -35,7 +35,7 @@ class Risk:
 
     def __give_all_players_amount_of_armies(self, amount):
         for player in self.players:
-            player.give_armies(amount)
+            player.receive_armies(amount)
 
     def __divide_armies_to_all_players(self):
         self.__give_all_players_amount_of_armies((10 - len(self.players)) * 5)
