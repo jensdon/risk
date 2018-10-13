@@ -11,6 +11,9 @@ class RiskTest(unittest.TestCase):
         for color in range(amount):
             self.newGame.add_player("Player", str(color), True);
 
+    def get_mission(self):
+        return
+
     def start_an_game(self, amount_of_players):
         self.setUp()
         self.generate_random_players(amount_of_players)
