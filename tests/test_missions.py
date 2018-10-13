@@ -11,7 +11,7 @@ class MissionTest(unittest.TestCase):
 
     def get_missions(self):
         mission = self.missions_class.get_mission()
-        if mission != None:
+        if mission:
             self.missions.append(mission)
             self.get_missions()
 

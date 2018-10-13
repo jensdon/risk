@@ -8,7 +8,7 @@ class Missions:
         self.__generate_missions();
 
     def get_mission(self):
-        if(len(self.missions) > 0):
+        if len(self.missions) > 0:
             random_index = self.__get_random_mission_index()
             mission = self.missions[random_index]
             self.__remove_mission_from_deck(random_index)
