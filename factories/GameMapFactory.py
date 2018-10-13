@@ -1,4 +1,4 @@
-from parsers.GameMapSetting import GameMapSetting,ConfigNotExists
+from parsers.GameMapSetting import GameMapSetting, ConfigNotExists, InvalidSource
 
 
 class GameMapNotExists(Exception):
@@ -6,12 +6,13 @@ class GameMapNotExists(Exception):
 
 
 class GameMapFactory:
-    def __init__(self, name):
-        self.name = name
 
     @staticmethod
-    def make_game_map(name):
+    def load_game_map(name):
+        game_map_settings = GameMapSetting(name)
         try:
-            return GameMapSetting.get_game_map_config(name)
+            return game_map_settings.load_game_map()
         except ConfigNotExists:
             raise GameMapNotExists('Map not exist')
+        except InvalidSource:
+            raise InvalidSource('Invalid source')
