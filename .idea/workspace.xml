@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbe77915-1c87-4776-91fd-2144e35c0652" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factories/GameMapFactory.py" beforeDir="false" afterPath="$PROJECT_DIR$/factories/GameMapFactory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parsers/GameMapSetting.py" beforeDir="false" afterPath="$PROJECT_DIR$/parsers/GameMapSetting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gamemapsettings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gamemapsettings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +12,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/risk$test.coverage" NAME="test Coverage Results" MODIFIED="1538817496010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/risk$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1539433530617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/risk$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1539433552693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="152" />
@@ -97,13 +94,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="9" />
-          <entry key="py" value="3259" />
+          <entry key="py" value="3293" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="3259" />
+          <entry key="Python" value="3293" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -158,7 +155,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/test_gamemap.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -191,13 +188,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parsers/GameMapSetting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="385">
+              <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
               <folding>
-                <marker date="1539433481404" expanded="true" signature="383:389" ph="..." />
+                <marker date="1539433669955" expanded="true" signature="555:561" ph="..." />
               </folding>
             </state>
           </provider>
@@ -239,10 +236,10 @@
         <option value="$PROJECT_DIR$/maps/default.json" />
         <option value="$PROJECT_DIR$/GameMapSettings.py" />
         <option value="$PROJECT_DIR$/GameMapFactory.py" />
-        <option value="$PROJECT_DIR$/parsers/GameMapSetting.py" />
         <option value="$PROJECT_DIR$/tests/test_gamemapsettings.py" />
         <option value="$PROJECT_DIR$/factories/GameMapFactory.py" />
         <option value="$PROJECT_DIR$/tests/test_gamemap.py" />
+        <option value="$PROJECT_DIR$/parsers/GameMapSetting.py" />
       </list>
     </option>
   </component>
@@ -363,9 +360,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_tests - 2018.10.13 at 14h 08m 41s.xml">
-      <configuration name="Unittests in tests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_tests - 2018.10.13 at 14h 09m 34s.xml">
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
@@ -393,6 +387,9 @@
     <history-entry file="Unittests_in_tests - 2018.10.13 at 14h 25m 30s.xml">
       <configuration name="Unittests in tests" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_tests - 2018.10.13 at 14h 25m 53s.xml">
+      <configuration name="Unittests in tests" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -403,7 +400,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43835616" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43835616" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -412,7 +409,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.25068492" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.24931507" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -488,16 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parsers/GameMapSetting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <marker date="1539433481404" expanded="true" signature="383:389" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_gamemapsettings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -514,6 +501,16 @@
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsers/GameMapSetting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding>
+            <marker date="1539433669955" expanded="true" signature="555:561" ph="..." />
           </folding>
         </state>
       </provider>

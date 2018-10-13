@@ -14,6 +14,12 @@ class GameMapSetting:
     def __init__(self, name):
         self.name = name
         self.path = "./maps/" + self.name.lower()
+        self.schema = {
+            "required": ["continents"],
+            "type": "object",
+            "continents": {
+                "required": ["name"]},
+        };
 
     def load_game_map_json(self):
         self.__check_if_config_exist()
@@ -24,20 +30,12 @@ class GameMapSetting:
             raise InvalidSource('Source is not valid')
 
     def __validate_json(self, json_document):
-        schema = {
-            "required": ["continents"],
-            "type": "object",
-            "continents": {
-                "required": ["name"]},
-        }
-
         try:
             datum = json.loads(json_document)
-            jsonschema.validate(datum, schema)
+            jsonschema.validate(datum, self.schema)
         except jsonschema.exceptions.ValidationError as e:
             return True
-        except json.decoder.JSONDecodeError as e:
-            return False
+        return False
 
     def __check_if_config_exist(self):
         if not os.path.exists(self.path):
