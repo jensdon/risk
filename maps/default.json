@@ -2,22 +2,215 @@
   "name": "Default map",
   "continents": [
     {
-      "name": "North America"
+      "id": 1,
+      "name": "North America",
+      "extra_armies": 5,
+      "territories": [
+        {
+          "id": 1,
+          "name": "Alaska",
+          "relations": [2, 4, 27]
+        },
+        {
+          "id": 2,
+          "name": "NorthWest Territory"
+        },
+        {
+          "id": 3,
+          "name": "Greenland"
+        },
+        {
+          "id": 4,
+          "name": "Alberta"
+        },
+        {
+          "id": 5,
+          "name": "Ontario"
+        },
+        {
+          "id": 6,
+          "name": "Quebec"
+        },
+        {
+          "id": 7,
+          "name": "Western United States"
+        },
+        {
+          "id": 8,
+          "name": "Eastern United States"
+        },
+        {
+          "id": 9,
+          "name": "Central America"
+        }
+      ]
     },
     {
-      "name": "South America"
+      "id": 2,
+      "name": "South America",
+      "extra_armies": 2,
+      "territories": [
+        {
+          "id": 10,
+          "name": "Venezuela"
+        },
+        {
+          "id": 11,
+          "name": "Peru"
+        },
+        {
+          "id": 12,
+          "name": "Brazil"
+        },
+        {
+          "id": 13,
+          "name": "Argentina"
+        }
+      ]
     },
     {
-      "name": "Europe"
+      "id": 3,
+      "name": "Europe",
+      "extra_armies": 5,
+      "territories": [
+        {
+          "id": 14,
+          "name": "Iceland"
+        },
+        {
+          "id": 15,
+          "name": "Scandinavia"
+        },
+        {
+          "id": 16,
+          "name": "Great Britain"
+        },
+        {
+          "id": 17,
+          "name": "Ukraine"
+        },
+        {
+          "id": 18,
+          "name": "Northern Europe"
+        },
+        {
+          "id": 19,
+          "name": "Western Europe"
+        },
+        {
+          "id": 17,
+          "name": "Southern Europe"
+        }
+      ]
     },
     {
-      "name": "Africa"
+      "id": 4,
+      "name": "Africa",
+      "extra_armies": 3,
+      "territories": [
+        {
+          "id": 18,
+          "name": "North Africa"
+        },
+        {
+          "id": 19,
+          "name": "Egypt"
+        },
+        {
+          "id": 20,
+          "name": "East Africa"
+        },
+        {
+          "id": 21,
+          "name": "Kongo"
+        },
+        {
+          "id": 22,
+          "name": "South Africa"
+        },
+        {
+          "id": 23,
+          "name": "Madagascar"
+        }
+      ]
     },
     {
-      "name": "Asia"
+      "id": 5,
+      "name": "Asia",
+      "extra_armies": 7,
+      "territories": [
+        {
+          "id": 24,
+          "name": "Ural"
+        },
+        {
+          "id": 25,
+          "name": "Siberia"
+        },
+        {
+          "id": 26,
+          "name": "Yakutsk"
+        },
+        {
+          "id": 27,
+          "name": "Kamchatka"
+        },
+        {
+          "id": 28,
+          "name": "Irkutsk"
+        },
+        {
+          "id": 29,
+          "name": "Japan"
+        },
+                {
+          "id": 30,
+          "name": "Mongolia"
+        },
+        {
+          "id": 31,
+          "name": "Afghanistan"
+        },
+        {
+          "id": 32,
+          "name": "China"
+        },
+        {
+          "id": 33,
+          "name": "Siam"
+        },
+        {
+          "id": 34,
+          "name": "India"
+        },
+        {
+          "id": 35,
+          "name": "Middle East"
+        }
+      ]
     },
     {
-      "name": "Australia"
+      "id": 6,
+      "name": "Australia",
+      "extra_armies": 2,
+      "territories": [
+        {
+          "id": 36,
+          "name": "Indonesia"
+        },
+        {
+          "id": 37,
+          "name": "New Guinea"
+        },
+        {
+          "id": 38,
+          "name": "Western Australia"
+        },
+        {
+          "id": 39,
+          "name": "Eastern Australia"
+        }
+      ]
     }
   ]
 }
