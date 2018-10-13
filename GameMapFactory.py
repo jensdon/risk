@@ -1,6 +1,7 @@
-import os.path
+from GameMapSetting import GameMapSetting,ConfigNotExists
 
-class MapNotExists(Exception):
+
+class GameMapNotExists(Exception):
     pass
 
 
@@ -9,12 +10,8 @@ class GameMapFactory:
         self.name = name
 
     @staticmethod
-    def get_game_map_config(name):
-        if not os.path.exists("./maps/" + name.lower()):
-            raise MapNotExists('Map not exist')
-
-    @staticmethod
     def make_game_map(name):
-        return GameMapFactory.get_game_map_config(name)
-
-
+        try:
+            return GameMapSetting.get_game_map_config(name)
+        except ConfigNotExists:
+            raise GameMapNotExists('Map not exist')
