@@ -17,6 +17,12 @@ class GameMapTest(unittest.TestCase):
         continents = game_map.get_continents()
         self.assertTrue(len(continents) > 0)
 
+    def test_gamemap_continents_have_territories(self):
+        game_map = GameMapFactory.load_game_map("default")
+        continents = game_map.get_continents()
+        for continent in continents:
+            self.assertTrue(len(continent.get_territories()) > 0)
+
 
 if __name__ == '__main__':
     unittest.main()
