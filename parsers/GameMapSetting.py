@@ -1,7 +1,7 @@
 import os.path
 import json
 import jsonschema
-import os
+from helpers.file_helper import FileHelper
 
 class ConfigNotExists(Exception):
     pass
@@ -43,8 +43,9 @@ class GameMapSetting:
             raise ConfigNotExists('Map not exist')
 
     def __read_content_config_file(self):
-        json_data = open(self.path).read()
+        json_data = FileHelper.read_data_from_file(self.path)
         return self.__create_map(json.loads(json_data))
 
     def __create_map(self,json):
+        print(json)
         pass
