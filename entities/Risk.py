@@ -1,5 +1,10 @@
+import numpy as np
+from random import shuffle
 from entities.Player import Player
 from entities.Missions import Missions
+from entities.GameMap import GameMap
+from factories.GameMapFactory import GameMapFactory
+
 
 class TooManyPlayersException(Exception):
     pass
@@ -15,6 +20,7 @@ class Risk:
     def __init__(self):
         self.players = []
         self.missions = Missions()
+        self.game_map = None
 
     def add_player(self, name, color, type_of_player):
         self.__check_for_too_many_players()
@@ -28,6 +34,16 @@ class Risk:
         self.__check_if_there_are_enough_players()
         self.__divide_armies_to_all_players()
         self.__divide_missions_for_all_players()
+        self.game_map = GameMapFactory.load_game_map("default")
+        self.__divide_territories_for_all_players()
+
+    def __divide_territories_for_all_players(self):
+        territories = self.game_map.get_territories()
+        shuffle(territories)
+        divided_territories = np.array_split(territories, len(self.players))
+        shuffle(divided_territories)
+        for index, player in enumerate(self.players):
+            player.receive_territories(divided_territories[index])
 
     def __divide_missions_for_all_players(self):
         for player in self.players:

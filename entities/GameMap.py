@@ -6,6 +6,14 @@ class GameMap:
     def get_continents(self):
         return self.continents
 
+    def get_territories(self):
+        territories = [];
+        for continent in self.continents:
+            for territory in continent.get_territories():
+                territories.append(territory)
+
+        return territories
+
     def get_territory_by_id(self,territory_id):
         for continent in self.continents:
             for territory in continent.get_territories():
