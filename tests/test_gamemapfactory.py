@@ -6,8 +6,8 @@ from entities.GameMap import GameMap
 class GameMapTest(unittest.TestCase):
 
     def generate_normal_map(self):
-        game_map = GameMapFactory.load_game_map("default")
-        self.continents = game_map.get_continents()
+        self.game_map = GameMapFactory.load_game_map("default")
+        self.continents = self.game_map.get_continents()
 
     def test_check_if_map_not_exist(self):
         with self.assertRaises(GameMapNotExists):
@@ -25,6 +25,10 @@ class GameMapTest(unittest.TestCase):
         for continent in self.continents:
             self.assertTrue(len(continent.get_territories()) > 0)
 
+    def test_gamemap_territories_relations(self):
+        self.generate_normal_map()
+        territory = self.game_map.get_territory_by_id(1)
+        self.assertTrue(len(territory.get_related_territories()) == 3)
 
 if __name__ == '__main__':
     unittest.main()
