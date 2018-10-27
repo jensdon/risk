@@ -26,7 +26,7 @@ class GameMapSetting:
         self.__check_if_config_exist()
         return self.__read_content_config_file()
 
-    def get_game_map_json(self, json):
+    def check_game_map_json(self, json):
         if self.__validate_json(json):
             raise InvalidSource('Source is not valid')
 
