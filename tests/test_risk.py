@@ -49,6 +49,10 @@ class RiskTest(unittest.TestCase):
         for player in self.newGame.get_players():
             self.assertIsNotNone(player.get_mission())
 
+    def test_do_all_players_received_territories(self):
+        self.start_an_game(3)
+        for player in self.newGame.get_players():
+            self.assertIsNotNone(player.get_territories())
 
 if __name__ == '__main__':
     unittest.main()
