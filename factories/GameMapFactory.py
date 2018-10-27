@@ -40,6 +40,7 @@ class GameMapFactory:
 
     @staticmethod
     def __generate_territories(game_map_config_dict_territories):
+
         territories = []
 
         for territory_dict in game_map_config_dict_territories:
@@ -49,5 +50,15 @@ class GameMapFactory:
                     territory_dict['name']
                 )
             )
+
+        for index, territory_dict in enumerate(game_map_config_dict_territories):
+            relations = []
+            if territory_dict.get('relations') is not None:
+                for relation_dict in territory_dict.get('relations'):
+                    for territory in territories:
+                        if territory.get_id() == relation_dict:
+                            relations.append(territory)
+
+                territories[index].add_related_territories(relations)
 
         return territories

@@ -9,3 +9,6 @@ class Territory:
 
     def get_related_territories(self):
         return self.related_territories
+
+    def add_related_territories(self,related_territories):
+        self.related_territories = related_territories

@@ -30,5 +30,6 @@ class GameMapTest(unittest.TestCase):
         territory = self.game_map.get_territory_by_id(1)
         self.assertTrue(len(territory.get_related_territories()) == 3)
 
+
 if __name__ == '__main__':
     unittest.main()
