@@ -30,6 +30,9 @@ class GameMapTest(unittest.TestCase):
         territory = self.game_map.get_territory_by_id(1)
         self.assertTrue(len(territory.get_related_territories()) == 3)
 
+    def test_count_if_all_continents_are_created(self):
+        self.generate_normal_map()
+        self.assertTrue(len(self.game_map.get_continents()) == 6)
 
 if __name__ == '__main__':
     unittest.main()
