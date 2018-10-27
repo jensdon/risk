@@ -1,6 +1,7 @@
 from parsers.GameMapSetting import GameMapSetting, ConfigNotExists, InvalidSource
 from entities.GameMap import GameMap
 from entities.Continent import Continent
+from entities.Territory import Territory
 
 class GameMapNotExists(Exception):
     pass
@@ -30,8 +31,23 @@ class GameMapFactory:
                 Continent(
                     continent_dict['id'],
                     continent_dict['name'],
-                    continent_dict['extra_armies']
+                    continent_dict['extra_armies'],
+                    GameMapFactory.__generate_territories(continent_dict['territories'])
                 )
             )
 
         return continents
+
+    @staticmethod
+    def __generate_territories(game_map_config_dict_territories):
+        territories = []
+
+        for territory_dict in game_map_config_dict_territories:
+            territories.append(
+                Territory(
+                    territory_dict['id'],
+                    territory_dict['name']
+                )
+            )
+
+        return territories
