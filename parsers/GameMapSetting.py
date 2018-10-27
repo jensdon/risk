@@ -44,8 +44,5 @@ class GameMapSetting:
 
     def __read_content_config_file(self):
         json_data = FileHelper.read_data_from_file(self.path)
-        return self.__create_map(json.loads(json_data))
-
-    def __create_map(self,json):
-        print(json)
-        pass
+        self.check_game_map_json(json_data)
+        return json.loads(json_data)
