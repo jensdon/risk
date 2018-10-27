@@ -1,6 +1,7 @@
 import os.path
 import json
 import jsonschema
+import os
 
 class ConfigNotExists(Exception):
     pass
@@ -13,7 +14,7 @@ class GameMapSetting:
 
     def __init__(self, name):
         self.name = name
-        self.path = "./maps/" + self.name.lower()
+        self.path = "../maps/" + self.name.lower()+'.json'
         self.schema = {
             "required": ["continents"],
             "type": "object",
@@ -43,4 +44,7 @@ class GameMapSetting:
 
     def __read_content_config_file(self):
         json_data = open(self.path).read()
-        return self.create_map(json.loads(json_data))
+        return self.__create_map(json.loads(json_data))
+
+    def __create_map(self,json):
+        pass
