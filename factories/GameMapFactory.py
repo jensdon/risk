@@ -51,6 +51,13 @@ class GameMapFactory:
                 )
             )
 
+        territories = GameMapFactory.__attach_related_territories(game_map_config_dict_territories, territories)
+
+        return territories
+
+    @staticmethod
+    def __attach_related_territories(game_map_config_dict_territories, territories):
+
         for index, territory_dict in enumerate(game_map_config_dict_territories):
             relations = []
             if territory_dict.get('relations') is not None:
