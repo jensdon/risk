@@ -16,6 +16,10 @@ class GameMapSettingsTest(unittest.TestCase):
         game_map_settings = GameMapSetting('default')
         self.game_map = game_map_settings.get_game_map_json(json)
 
+    def test_check_if_default_map_is_valid(self):
+        game_map_settings = GameMapSetting('default')
+        self.game_map = game_map_settings.load_game_map_json()
+
 
 if __name__ == '__main__':
     unittest.main()
